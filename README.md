@@ -1,12 +1,4 @@
-# Advance-Networking-Kubernetes-HW
-
-A base repository for the the Kubernetes HW of the Advance Networking Course in Reichman university.
-
-## Submission guidelines
-
-- Fork this repository or just clone it into a local folder
-- The repository have 2 folders, one for each section to follow. and subfolder for the subsections
-- Your final submission **on moodle** will a zip named ex5.zip that contains the folders s1 and s2 after you fill their files as described in the instructions below - make sure that you read the submission example on the ex5 moodle assignment page. A submission that does not follow the **exact** guidelines and zip structure will not be checked!
+# Kubernetes
 
 ## Basics of Kubernetes
 
@@ -307,7 +299,7 @@ A base repository for the the Kubernetes HW of the Advance Networking Course in 
 
 - Diclaimer - the meterials here are taken from the basic [Kubernetes toturial](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
 
-### Final assignment
+### Final task
 
 Ok good, by now you should have known how to deploy a basic microservice on Kubernetes, how to scale, expose, debug and update your microservice.
 In the final assignment you would build and deploy a toy example application that requires several microservice to communicate with each other. We shall call it `full-name-app`
@@ -334,5 +326,3 @@ Your task is to send a GET request to the `frontend` application from the outsid
       - `frontend` - The externally expose service, simple service that uses environment variable to fetch data from its dependencies (i.e first/last name dbs)
   - Eventuall what you will need to to is update the yaml files of the different microservice to comply with the task requirements, run `./test.sh` and make sure the application works as expected! i.e returns ```Hey my name is {first name} {last name}``` with the appropriate first and last names.
 
-- Submission:
-  - The s2 complete folder with your filled up yaml files.
